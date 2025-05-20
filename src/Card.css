@@ -6,6 +6,7 @@ text-align: center;
 max-width: 300px;
 margin: 20px;
 display: inline-block;
+background-color: rgb(181, 182, 171);
 }
 .Card .Card-IMG{
     border: 1px solid rgb(163, 159, 159) ;
@@ -14,15 +15,20 @@ display: inline-block;
     padding: 1px;
     margin: 5px;
 }
-.Card-UID{
+
+ .Card .Card-Btn{
+    margin: 10px;
+    width: 25%;
+    height: 30px;
+    color: aliceblue;
+    background-color: rgb(226, 73, 26);
+    border: 1px solid rgb(163, 159, 159) ;
+    box-shadow: 2px 2px 2px rgb(128, 119, 119);
     
 }
-.Card-ID{
+.Card .Card-Btn:hover{
+cursor: pointer;
+    background-color: rgb(185, 60, 22);
+
     
-}
-.Card-Body{
-    
-}
-.Card-Btn{
-    
-}
+} 
