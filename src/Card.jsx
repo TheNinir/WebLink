@@ -16,8 +16,7 @@ function Card(props){
     
 useEffect(() =>{
     try{
-fetch(`https:jsonplaceholder.typicode.com/posts/${props.page}`).then(res => res.json()).then(data => {
-    setUrl(props.page);
+fetch(`https://jsonplaceholder.typicode.com/posts/${props.page}`).then(res => res.json()).then(data => {
     console.log(data);
     setTitle(data.title);
     setUID(data.userId);
@@ -27,7 +26,7 @@ fetch(`https:jsonplaceholder.typicode.com/posts/${props.page}`).then(res => res.
 }
 catch(er){
 console.log(er)
-}},[url]);
+}},[props.page]);
 if(globalBool === true){
     return(
 <>
